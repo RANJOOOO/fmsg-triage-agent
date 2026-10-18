@@ -1,0 +1,6 @@
+state.json
+agent.log
+run.out
+node_modules/
+.env
+*.key
