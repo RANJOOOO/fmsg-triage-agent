@@ -27,4 +27,5 @@ jobs:
         env:
           FMSG_API_KEY: ${{ secrets.FMSG_API_KEY }}
           CLAUDE_CODE_OAUTH_TOKEN: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN }}
+          TEST_OWNER_AS_EXTERNAL: "1"   # testing only: a thread from the owner is triaged like a third party. Remove for real use.
         run: node agent_ci.js
